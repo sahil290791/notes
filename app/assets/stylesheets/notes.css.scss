@@ -1,3 +1,65 @@
 // Place all the styles related to the notes controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+	form{
+		max-width: 600px;
+		margin: 4px auto 0px;
+	}
+	body{
+	background: #4C4C4C !important;
+	font-family: 'Roboto', sans-serif;
+	margin-top: 0;
+	}
+	.parentContainer{
+	max-width: 1000px;
+	margin: 0 auto;
+	}
+	.parentContainer .navbar-brand{
+	color: #6D4C41;
+	display: block;
+	float: none;
+	text-align: center;
+	text-decoration: none;
+	}
+	.navbar-header{
+	display: block;
+	float: none;
+	}
+	.navbar.navbar-default {
+	  padding: 12px 3px;
+	  background: #FDD835;
+	  border: none;
+	  border-radius: 0;
+	  margin-bottom:0;
+	  box-shadow: 1px 0 3px 0 #6d4c41;
+      z-index: 1;
+	}
+	.notesContainer{
+	max-height: 200px; height: 200px; background: rgb(255, 255, 255) none repeat scroll 0% 0%;
+	max-width: 200px;
+	position: relative;
+	margin: 8px auto;
+	}
+	.notesContainer > .noteTitle{
+	left: 0;
+	position: absolute;
+	text-align: center;
+	top: 47%;
+	width: 100%;
+	font-size: 18px;
+	}
+	.new{
+	border: 1px dashed #666;
+	}
+	.notes{
+	padding: 22px 12px; background: rgb(221, 221, 221) none repeat scroll 0% 0%; min-height: 100vh;
+	}
+	.notes > a{
+	margin-bottom: 20px;
+	}
+	.new .fa-plus:hover, .new-link:hover, .links:hover{
+	color: #333;
+	}
+	.new-link:hover, .links:hover{
+		background: none repeat scroll 0 0 #ddd;
+	}
