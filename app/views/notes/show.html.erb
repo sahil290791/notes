@@ -5,7 +5,7 @@
     		<%= link_to 'Home', notes_path, class: '' %>/ <%= @note.title %>
     	</div>
 		<div class="h3 margin-top-md">
-		  <%= @note.title %> <span><%= link_to '<i class="fa fa-pencil fa-fw"></i>'.html_safe, edit_note_path(@note), class:'btn btn-default btn-sm' %></span>
+		  <%= @note.title %> <span><%= link_to '<i class="fa fa-pencil fa-fw"></i>'.html_safe, edit_note_path(@note), class:'btn btn-default btn-sm' %> <%= link_to '<i class="fa fa-trash"></i>'.html_safe, @note, method: :delete, data: { confirm: 'Are you sure?' },class:'btn btn-sm btn-default' %></span>
 		</div>
 		<p class="text-muted desc">
 		  <%= raw @note.description %>
