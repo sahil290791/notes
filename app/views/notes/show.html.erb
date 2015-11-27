@@ -1,11 +1,17 @@
-<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 notes" style="">
-	<p id="notice"><%= notice %></p>
-	<div class="h3">
-	  <%= @note.title %>
-	 </div>
-	  <%= @note.description %>
+<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 notes">
+	<p id="notice" class="hidden"><%= notice %></p>
+	<div class="container-fluid whiteContainer" >
+    	<div class="col-md-12 col-sm-12 col-xs-12 col-lg-12 navigation">
+    		<%= link_to 'Home', notes_path, class: '' %>/ <%= @note.title %>
+    	</div>
+		<div class="h3 margin-top-md">
+		  <%= @note.title %> <span><%= link_to '<i class="fa fa-pencil fa-fw"></i>'.html_safe, edit_note_path(@note), class:'btn btn-default btn-sm' %></span>
+		</div>
+		<p class="text-muted">
+		  <%= @note.description %>
+		</p>
+	</div>	  
 </div>
 
 
-<%= link_to 'Edit', edit_note_path(@note) %> |
-<%= link_to 'Back', notes_path %>
+

@@ -1,7 +1,10 @@
 
-<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 notes" style="">
-    <%= render 'form' %>                       
+<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 notes">
+	<div class="container-fluid whiteContainer">
+    	<div class="col-md-12 col-sm-12 col-xs-12 col-lg-12 navigation">
+    		<%= link_to 'Back', @note, class: '' %>/ Edit Note
+    	</div>
+    	<%= render 'form' %>                       
+    </div>
 </div>
 
-<%= link_to 'Show', @note %> |
-<%= link_to 'Back', notes_path %>

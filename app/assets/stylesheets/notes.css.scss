@@ -10,6 +10,27 @@
 	font-family: 'Roboto', sans-serif;
 	margin-top: 0;
 	}
+	.margin-top-md{
+		margin-top: 10px;
+	}
+	.paddingReset{
+		padding-left: 0;
+		padding-right: 0;
+	}
+	.whiteContainer{
+		background:#fff;margin:10px auto;max-width:700px;padding: 8px 16px 20px;
+	}
+	.navigation{
+		font-size: 15px;
+    	padding: 7px 2px;
+	}
+	.navigation a{
+		text-decoration: underline;
+	}
+	.navigation a:hover{
+		color: #333;
+		background-color: #fff;
+	}
 	.parentContainer{
 	max-width: 1000px;
 	margin: 0 auto;
